@@ -9,4 +9,46 @@ body {
 	width: 300px;
 	height: auto;
 	font-size: 27px;
+	display: flex;
+	justify-content: center;
+}
+.to-do-items {
+	width: 35%;
+	margin: auto;
+	margin-top: 100px;
+}
+.item {
+	height: 50px;
+	margin-top: 10px;
+	display: grid;
+	grid-template-columns: 75% 20%;
+	grid-column-gap: 25px;
+}
+.item-text {
+	border: 1px solid;
+	display: flex;
+	align-items: center;
+	padding: 10px;
+}
+
+.delete-icon {
+	border: 1px solid;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	font-size: 18px;
+}
+
+.add-item {
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid;
+	margin-top: 10px;
+	margin: auto;
+	margin-top: 10px;
+	font-size: 18px;
+	height: 35px;
 }
