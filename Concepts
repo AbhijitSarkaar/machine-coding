@@ -1,0 +1,18 @@
+Notes:
+1. When appending an element, elements are created in the js file using document.createElement api
+
+
+Roadblocks faced
+
+1. Not able to add events.
+=> Worked using getElementById. Not working using getElementsByClassName. getElementsByClassName returns a list of html elements.
+
+2. Should same ids be used?
+=> Ids should not be names multiple times. it should be unique. getElementById returns the first element with the given id
+
+3. Not able to attach handlers to dynamicaly created elements
+=> one way to solve it is adding the handlers inside the constructor. Another way to solve it is to use event delegation.
+i.e attach the event handler on a parent container and when the event passes down to that element, call the required function
+
+4. how to remove a element from a list? basically how to locate the item selected? index??
+=> Add the remove functionality on the constructor
