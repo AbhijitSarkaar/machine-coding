@@ -3,7 +3,6 @@ body {
 	height: 100%;
 	background: rgb(247, 249, 250);
 }
-
 #header-text {
 	margin: auto;
 	width: 300px;
@@ -30,7 +29,6 @@ body {
 	align-items: center;
 	padding: 10px;
 }
-
 #delete-icon {
 	border: 1px solid;
 	display: flex;
