@@ -39,7 +39,11 @@ body {
 	cursor: pointer;
 	font-size: 18px;
 }
-
+.item-input {
+	height: 30px;
+	margin-top: 10px;
+	width: 98.3%;
+}
 .add-item {
 	cursor: pointer;
 	display: flex;
