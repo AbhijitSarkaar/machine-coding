@@ -31,7 +31,7 @@ body {
 	padding: 10px;
 }
 
-.delete-icon {
+#delete-icon {
 	border: 1px solid;
 	display: flex;
 	justify-content: center;
@@ -44,7 +44,7 @@ body {
 	margin-top: 10px;
 	width: 98.3%;
 }
-.add-item {
+#add-item {
 	cursor: pointer;
 	display: flex;
 	justify-content: center;
