@@ -18,7 +18,7 @@ document.getElementById('add-item').addEventListener('click', () => {
 		let toDoItems = document.getElementById('items-container');
 		toDoItems.appendChild(getItemHTML());
 		inputText = '';
-		document.getElementById('item-input').innerText = '';
+		document.getElementById('item-input').value = '';
 	} else {
 		alert('input is empty');
 	}
