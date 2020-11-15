@@ -4,7 +4,7 @@ body {
 	background: rgb(247, 249, 250);
 }
 
-.header-text {
+#header-text {
 	margin: auto;
 	width: 300px;
 	height: auto;
@@ -12,19 +12,19 @@ body {
 	display: flex;
 	justify-content: center;
 }
-.to-do-items {
+#to-do-container {
 	width: 35%;
 	margin: auto;
 	margin-top: 100px;
 }
-.item {
+#item {
 	height: 50px;
 	margin-top: 10px;
 	display: grid;
 	grid-template-columns: 75% 20%;
 	grid-column-gap: 25px;
 }
-.item-text {
+#item-text {
 	border: 1px solid;
 	display: flex;
 	align-items: center;
@@ -39,7 +39,7 @@ body {
 	cursor: pointer;
 	font-size: 18px;
 }
-.item-input {
+#item-input {
 	height: 30px;
 	margin-top: 10px;
 	width: 98.3%;
