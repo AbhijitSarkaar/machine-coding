@@ -16,3 +16,6 @@ i.e attach the event handler on a parent container and when the event passes dow
 
 4. how to remove a element from a list? basically how to locate the item selected? index??
 => Add the remove functionality on the constructor
+
+5. linking js file not working
+=> add async attribute in the script file or place the script tag after the body
