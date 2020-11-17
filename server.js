@@ -3,7 +3,7 @@ const cors = require('cors');
 
 const app = express();
 app.use(cors());
-app.use('/', express.static('ToDoBasic')); //to serve static files from ./ToDoApp directory
+app.use('/', express.static('Trello')); //to serve static files from ./ToDoApp directory
 
 app.listen(5000, () => {
 	console.log('listening to port 5000');
