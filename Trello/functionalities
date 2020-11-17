@@ -1,0 +1,18 @@
+Start: 17 Nov 2020, 10:35 AM
+End: 
+
+Core features
+
+1. A task to have three properties, name, description, status
+2. There can be 2 status, to do and done
+3. user can drag and drop one task from one status to another status
+4. store the data into localstorage/sessionstorage to persist after refresh
+
+UI model
+
+1. Page upper section to have two i/p fields, name and description and a create button to create a task. default status is to do
+2. once created, i/p fields to be emptied and a task to get added to the to do list
+3. In the middle to lower section, two vertical list should be present which contains the tasks of two status todo and done
+4. The task data to be persisted after refresh
+
+
