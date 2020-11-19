@@ -1,6 +1,6 @@
 Notes:
 1. When appending an element, elements are created in the js file using document.createElement api
-
+2. an element is available to the javascript file only after it's parsed
 
 Roadblocks faced
 
@@ -18,4 +18,7 @@ i.e attach the event handler on a parent container and when the event passes dow
 => Add the remove functionality on the constructor
 
 5. linking js file not working
-=> add async attribute in the script file or place the script tag after the body
+=> add async attribute in the script file or place the script tag after the body. 
+putting script tag after the body creates the document object and then adds the events. async attributes lets the html parsing
+to continue while downloading the script file
+https://stackoverflow.com/questions/436411/where-should-i-put-script-tags-in-html-markup
