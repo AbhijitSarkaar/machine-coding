@@ -9,7 +9,7 @@ body {
 .task-creation-container {
     width: 33%;
     height: auto;
-    border: 1px solid;
+    border: 2px solid lightgray;
     background: white;
     margin: auto;
 }
@@ -40,7 +40,7 @@ body {
     color: white;
 }
 .task-list-container {
-    height: 300px;
+    height: 60%;
     width: 60%;
     margin: auto;
     margin-top: 20px;
@@ -62,6 +62,23 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-left: 10px;
     background: rgb(122, 73, 211);
+}
+.list-tasks {
+    width: 80%;
+    margin: auto;
+    height: 90%;
+    margin-top: 10px;
+    background: rgb(219, 241, 241);
+    border: 1px solid lightgray;
+}
+.list-task {
+    width: 90%;
+    height: 100px;
+    margin: auto;
+    border: 2px solid lightgray;
+    background: rgb(255, 255, 255);
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
