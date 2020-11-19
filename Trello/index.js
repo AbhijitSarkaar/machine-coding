@@ -1,5 +1,16 @@
 import { todo, done } from './data.js';
 
+let todoList = [...todo],
+	doneList = [...done];
+
+if (localStorage.getItem('todo')) {
+	todoList = JSON.parse(localStorage.getItem('todo'));
+} else localStorage.setItem('todo', JSON.stringify(todoList));
+
+if (localStorage.getItem('done')) {
+	doneList = JSON.parse(localStorage.getItem('done'));
+} else localStorage.setItem('done', JSON.stringify(doneList));
+
 const newTask = (name, desc) => {
 	let nameDiv = document.createElement('div');
 	nameDiv.innerText = 'Name: ' + name;
@@ -23,6 +34,12 @@ document.getElementById('add-task').addEventListener('click', () => {
 	if (!taskDesc || !taskName) {
 		alert('Name/Desc is empty');
 	} else {
+		todoList.push({
+			name: taskName,
+			desc: taskDesc,
+			status: 'todo',
+		});
+		localStorage.setItem('todo', JSON.stringify(todoList));
 		document.getElementById('todo-list-tasks').append(newTask(taskName, taskDesc));
 
 		//clearing the input values
@@ -32,10 +49,11 @@ document.getElementById('add-task').addEventListener('click', () => {
 });
 
 window.onload = () => {
-	todo.forEach((item) => {
+	console.log(todoList);
+	todoList.forEach((item) => {
 		document.getElementById('todo-list-tasks').append(newTask(item.name, item.desc));
 	});
-	done.forEach((item) => {
+	doneList.forEach((item) => {
 		document.getElementById('done-list-tasks').append(newTask(item.name, item.desc));
 	});
 };
