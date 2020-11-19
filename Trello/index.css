@@ -64,7 +64,8 @@ body {
     align-items: center;
     background: rgb(122, 73, 211);
 }
-#list-tasks {
+#todo-list-tasks,
+#done-list-tasks {
     width: 80%;
     margin: auto;
     height: 90%;
