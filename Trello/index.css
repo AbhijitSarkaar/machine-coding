@@ -6,29 +6,29 @@ body {
     background-color: rgb(227, 239, 243);
     margin: 0;
 }
-.task-creation-container {
+#task-creation-container {
     width: 33%;
     height: auto;
     border: 2px solid lightgray;
     background: white;
     margin: auto;
 }
-.task-name-container,
-.task-desc-container {
+#task-name-container,
+#task-desc-container {
     height: 30%;
     display: flex;
     align-items: center;
     padding: 10px;
 }
-.task-name {
+#task-name {
     height: 35px;
     width: 70%;
 }
-.task-desc {
+#task-desc {
     width: 70%;
     height: 40px;
 }
-.add-task {
+#add-task {
     height: 40px;
     width: 70px;
     margin: 10px;
@@ -39,7 +39,7 @@ body {
     background: rgb(122, 73, 211);
     color: white;
 }
-.task-list-container {
+#task-list-container {
     height: 60%;
     width: 60%;
     margin: auto;
@@ -48,12 +48,12 @@ body {
     grid-template-columns: repeat(2, 48%);
     grid-column-gap: 36px;
 }
-.list-container {
+#list-container {
     border: 1px solid rgb(149, 185, 197);
     padding: 20px;
     background: white;
 }
-.list-header {
+#list-header {
     width: 80%;
     margin: auto;
     height: 30px;
@@ -64,7 +64,7 @@ body {
     align-items: center;
     background: rgb(122, 73, 211);
 }
-.list-tasks {
+#list-tasks {
     width: 80%;
     margin: auto;
     height: 90%;
@@ -72,7 +72,7 @@ body {
     background: rgb(219, 241, 241);
     border: 1px solid lightgray;
 }
-.list-task {
+#list-task {
     width: 90%;
     height: 100px;
     margin: auto;
