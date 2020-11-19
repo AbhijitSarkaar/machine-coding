@@ -39,3 +39,29 @@ body {
     background: rgb(122, 73, 211);
     color: white;
 }
+.task-list-container {
+    height: 300px;
+    width: 60%;
+    margin: auto;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 48%);
+    grid-column-gap: 36px;
+}
+.list-container {
+    border: 1px solid rgb(149, 185, 197);
+    padding: 20px;
+    background: white;
+}
+.list-header {
+    width: 80%;
+    margin: auto;
+    height: 30px;
+    color: white;
+    border: 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+    background: rgb(122, 73, 211);
+}
