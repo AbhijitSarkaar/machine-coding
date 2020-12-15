@@ -1,0 +1,7 @@
+1. Start and Reset button
+2. On start button click, timer starts and runs till 2 min in hh:mm:ss format and after that stops with an alert('Timer stopped')
+3. Reset button click stops and resets the clock to 0
+4. time displayed is in hh:mm:ss format
+
+Bonus features
+1. timer runnning in N time => 0 time
