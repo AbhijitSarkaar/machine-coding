@@ -2,11 +2,21 @@ let totalMinutes = 1, totalSeconds = 0;
 let nextEvents = []
 
 getSeconds = () => {
+    let promises = [];
     for(let j = 1; j <= 10; ++j) {
-        nextEvents.push(setTimeout(() => {
-            document.getElementById('second-container').innerText = j;
-        }, j * 1000))
+        let promise = new Promise((resolve, reject) => {
+            nextEvents.push(setTimeout(() => {
+                document.getElementById('second-container').innerText = j;
+                resolve(j)
+            }, j * 1000))
+        })
+        promises.push(promise)
     }
+    Promise.all(promises).then(res => {
+        setTimeout(() => {
+            alert('alert after all')
+        }, 0)
+    })
 }
 
 clearScheduledEvents = () => {
