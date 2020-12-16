@@ -64,14 +64,18 @@ document.getElementById('add-task').addEventListener('click', () => {
 	}
 });
 
-document.getElementById('todo-list-tasks').addEventListener('dragstart', (event) => {
+document.getElementById('task-list-container').addEventListener('dragstart', (event) => {
 	if (event.target.id === 'list-task') {
-		console.log('started');
+		setTimeout(() => {
+			event.target.className = 'invisible';
+		}, 0);
 	}
 });
 
-document.getElementById('todo-list-tasks').addEventListener('dragend', (event) => {
+document.getElementById('task-list-container').addEventListener('dragend', (event) => {
 	if (event.target.id === 'list-task') {
-		console.log('ended');
+		setTimeout(() => {
+			event.target.className = '';
+		}, 0);
 	}
 });

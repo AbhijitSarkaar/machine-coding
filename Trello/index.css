@@ -1,86 +1,89 @@
 body,
 html {
-    height: 100%;
+	height: 100%;
 }
 body {
-    background-color: rgb(227, 239, 243);
-    margin: 0;
+	background-color: rgb(227, 239, 243);
+	margin: 0;
 }
 #task-creation-container {
-    width: 33%;
-    height: auto;
-    border: 2px solid lightgray;
-    background: white;
-    margin: auto;
+	width: 33%;
+	height: auto;
+	border: 2px solid lightgray;
+	background: white;
+	margin: auto;
 }
 #task-name-container,
 #task-desc-container {
-    height: 30%;
-    display: flex;
-    align-items: center;
-    padding: 10px;
+	height: 30%;
+	display: flex;
+	align-items: center;
+	padding: 10px;
 }
 #task-name {
-    height: 35px;
-    width: 70%;
+	height: 35px;
+	width: 70%;
 }
 #task-desc {
-    width: 70%;
-    height: 40px;
+	width: 70%;
+	height: 40px;
 }
 #add-task {
-    height: 40px;
-    width: 70px;
-    margin: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    background: rgb(122, 73, 211);
-    color: white;
+	height: 40px;
+	width: 70px;
+	margin: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	background: rgb(122, 73, 211);
+	color: white;
 }
 #task-list-container {
-    height: 60%;
-    width: 60%;
-    margin: auto;
-    margin-top: 20px;
-    display: grid;
-    grid-template-columns: repeat(2, 48%);
-    grid-column-gap: 36px;
+	height: 60%;
+	width: 60%;
+	margin: auto;
+	margin-top: 20px;
+	display: grid;
+	grid-template-columns: repeat(2, 48%);
+	grid-column-gap: 36px;
 }
 #list-container {
-    border: 1px solid rgb(149, 185, 197);
-    padding: 20px;
-    background: white;
+	border: 1px solid rgb(149, 185, 197);
+	padding: 20px;
+	background: white;
 }
 #list-header {
-    width: 80%;
-    margin: auto;
-    height: 30px;
-    color: white;
-    border: 1px solid;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: rgb(122, 73, 211);
+	width: 80%;
+	margin: auto;
+	height: 30px;
+	color: white;
+	border: 1px solid;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: rgb(122, 73, 211);
 }
 #todo-list-tasks,
 #done-list-tasks {
-    width: 80%;
-    margin: auto;
-    height: 90%;
-    margin-top: 10px;
-    background: rgb(219, 241, 241);
-    border: 1px solid lightgray;
+	width: 80%;
+	margin: auto;
+	height: 90%;
+	margin-top: 10px;
+	background: rgb(219, 241, 241);
+	border: 1px solid lightgray;
 }
 #list-task {
-    width: 90%;
-    height: 100px;
-    margin: auto;
-    border: 2px solid lightgray;
-    background: rgb(255, 255, 255);
-    cursor: pointer;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding: 5px;
+	width: 90%;
+	height: 100px;
+	margin: auto;
+	border: 2px solid lightgray;
+	background: rgb(255, 255, 255);
+	cursor: pointer;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 5px;
+}
+.invisible {
+	display: none;
 }
