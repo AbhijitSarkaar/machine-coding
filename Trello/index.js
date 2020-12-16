@@ -11,6 +11,12 @@ if (localStorage.getItem('done')) {
 	doneList = JSON.parse(localStorage.getItem('done'));
 } else localStorage.setItem('done', JSON.stringify(doneList));
 
+/**
+ *
+ * @param {*} name : Name of the task to be created
+ * @param {*} desc : Description of the task to be created
+ */
+
 const newTask = (name, desc) => {
 	let nameDiv = document.createElement('div');
 	nameDiv.innerText = 'Name: ' + name;
@@ -22,10 +28,20 @@ const newTask = (name, desc) => {
 
 	let listTask = document.createElement('div');
 	listTask.id = 'list-task';
+	listTask.draggable = true;
 	listTask.append(nameDiv);
 	listTask.append(descDiv);
 
 	return listTask;
+};
+
+window.onload = () => {
+	todoList.forEach((item) => {
+		document.getElementById('todo-list-tasks').append(newTask(item.name, item.desc));
+	});
+	doneList.forEach((item) => {
+		document.getElementById('done-list-tasks').append(newTask(item.name, item.desc));
+	});
 };
 
 document.getElementById('add-task').addEventListener('click', () => {
@@ -48,12 +64,14 @@ document.getElementById('add-task').addEventListener('click', () => {
 	}
 });
 
-window.onload = () => {
-	console.log(todoList);
-	todoList.forEach((item) => {
-		document.getElementById('todo-list-tasks').append(newTask(item.name, item.desc));
-	});
-	doneList.forEach((item) => {
-		document.getElementById('done-list-tasks').append(newTask(item.name, item.desc));
-	});
-};
+document.getElementById('todo-list-tasks').addEventListener('dragstart', (event) => {
+	if (event.target.id === 'list-task') {
+		console.log('started');
+	}
+});
+
+document.getElementById('todo-list-tasks').addEventListener('dragend', (event) => {
+	if (event.target.id === 'list-task') {
+		console.log('ended');
+	}
+});
